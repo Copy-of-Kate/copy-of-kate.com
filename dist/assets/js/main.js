@@ -41,3 +41,5 @@
   };
 
 })( jQuery );
+
+$('[data-title=main]').fitText(0.7);

@@ -350,6 +350,10 @@ Components are the stuff of UI. Eg. buttons, special titles, etc.
 These get much more explicitly named: eg. products-list, etc.
 */
 
+.title-book {
+	line-height: 1;
+}
+
 /*
 Trumps are overrides, helpers, utilities. They should only affect
 one piece of DOM at a time and usually carry !important
