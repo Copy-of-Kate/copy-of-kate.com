@@ -325,8 +325,17 @@ h1 {
 	text-transform: uppercase;
 }
 
+p {
+	margin: 0 0 0.5em;
+}
+
 h1 {
 	font-size: 2em;
+	line-height: 1.4;
+}
+
+p {
+	font-size: 1em;
 	line-height: 1.4;
 }
 
@@ -376,6 +385,10 @@ one piece of DOM at a time and usually carry !important
 	visibility: inherit !important;
 }
 
+.u-text-center {
+	text-align: center !important;
+}
+
 /* small displays */
 
 /* medium displays */
@@ -418,6 +431,11 @@ h1 {
 	line-height: 1.176;
 }
 
+p {
+	font-size: 1.15em;
+	line-height: 1.54;
+}
+
 }
 
 @media only screen and (max-width: 40em) {
@@ -440,6 +458,11 @@ h1 {
 	color: #000 !important;
 	background: transparent !important;
 	box-shadow: none !important;
+}
+
+p {
+	orphans: 3;
+	widows: 3;
 }
 
 }
