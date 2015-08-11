@@ -23,7 +23,7 @@ gulp.task('styles', function() {
     .pipe(autoprefixer('last 2 versions', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(uncss({
       html: glob.sync('dist/**/*.html'),
-      ignore: [/is-/, /not-/, /Modal-/]
+      ignore: [/is-/, /not-/]
     }))
     .pipe(cmq({
       log: true
