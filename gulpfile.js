@@ -29,10 +29,10 @@ gulp.task('styles', function() {
       log: true
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/us/site/motherboards/Z170/assets/css'))
+    .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss({processImport:false}))
-    .pipe(gulp.dest('dist/us/site/motherboards/Z170/assets/css'))
+    .pipe(gulp.dest('dist/assets/css'))
     .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
@@ -41,10 +41,10 @@ gulp.task('scripts', function() {
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/us/site/motherboards/Z170/assets/js'))
+    .pipe(gulp.dest('dist/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/us/site/motherboards/Z170/assets/js'));
+    .pipe(gulp.dest('dist/assets/js'));
 });
 
 gulp.task('html', function() {
@@ -54,7 +54,7 @@ gulp.task('html', function() {
       basepath: '@file'
     }))
     .pipe(minifyHTML())
-    .pipe(gulp.dest('dist/us/site/motherboards/Z170/'))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('clean', function() {
