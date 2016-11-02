@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    bookend (0.1.0)
     coderay (1.1.1)
     colorator (1.1.0)
     em-websocket (0.5.1)
@@ -56,7 +57,6 @@ GEM
     lumberjack (1.0.10)
     mercenary (0.3.6)
     method_source (0.8.2)
-    minima (2.0.0)
     multi_json (1.12.1)
     nenv (0.3.0)
     notiffany (0.1.1)
@@ -82,12 +82,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bookend
   guard
   guard-jekyll-plus
   guard-livereload
   jekyll (= 3.3.0)
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
 
 RUBY VERSION
    ruby 2.3.1p112
