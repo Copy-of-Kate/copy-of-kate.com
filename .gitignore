@@ -1,14 +1,3 @@
-.sass-cache
-
-# npm
-*node_modules*
-
-# Sublime
-*.sublime*
-
-#SFTP
-*sftp-config.json
-
 # =========================
 # Operating System Files
 # =========================
