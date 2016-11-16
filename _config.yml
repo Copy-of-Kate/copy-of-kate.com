@@ -30,3 +30,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 port: 1337
+
+sass:
+    style: compressed
