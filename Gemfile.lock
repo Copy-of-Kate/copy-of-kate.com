@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    bookend (0.3.2)
+    bookend (0.3.3)
     coderay (1.1.1)
     colorator (1.1.0)
     em-websocket (0.5.1)
@@ -50,7 +50,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.12.0)
+    kramdown (1.13.0)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
