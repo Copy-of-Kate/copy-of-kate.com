@@ -1,9 +1,7 @@
 ---
 layout: default
+title: Chapter One
 ---
-
-# Chapter One
-
 She awoke slowly, light starting as pinholes in her vision eventually expanding to a brightness only the snowbound would know in the middle of the day. Her right arm was numb, she had fallen on it cutting off circulation. She rolled over now feeling the sharp cold of the cement floor which was accentuated by the lonely sound of the wind occasionally picking up and fading away every few moments.
 
 How many days this time?
