@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
-    bookend (0.3.5)
+    bookend (0.3.6)
     coderay (1.1.1)
     colorator (1.1.0)
     em-websocket (0.5.1)
