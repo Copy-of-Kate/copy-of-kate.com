@@ -1,0 +1,64 @@
+/*
+index.css is for any CSS rule that does not include a class, ID,
+or selector other than native HTML
+*/
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif|Oxygen:700");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%
+}
+@media (max-width: 45em) {
+  html {
+    font-size: 80%
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 90%
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #555;
+  font-family: "Droid Serif", serif;
+  line-height: 1.7
+}
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0
+}
+p {
+  font-size: 1.15em;
+  margin-bottom: 2em
+}
+@media (max-width: 45em) {
+  p {
+    font-size: 1.06886em
+  }
+}
+h1,
+h2,
+h3 {
+  color: #333;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em
+}
+h1 {
+  font-size: 4.5em
+}
+@media (max-width: 45em) {
+  h1 {
+    font-size: 2.5em
+  }
+}
