@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
 import './Book.css';
 
 import Intro from './book/Intro';
 import Chapter from './book/Chapter';
+import NotFound from './NotFound';
 
-class Book extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="Book">
+const Book = () => {
+  return (
+    <Router>
+      <div className="Book">
+        <Switch>
           <Route exact path="/" component={Intro} />
           <Route path="/book/:chapter/" component={Chapter} />
-        </div>
-      </Router>
-    );
-  }
-}
+          <Route component={NotFound} />
+        </Switch>
+      </div>
+    </Router>
+  );
+};
 
 export default Book;
