@@ -18,7 +18,7 @@ const Book = () => {
         <Switch>
           <Route exact path="/" component={Intro} />
           <Route exact path="/book/" component={TableOfContents} />
-          <Route path="/book/:chapter/" component={Chapter} />
+          <Route path="/book/:chapter/:title/" component={Chapter} />
           <Route component={NotFound} />
         </Switch>
       </div>
