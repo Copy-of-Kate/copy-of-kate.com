@@ -1,5 +1,4 @@
 import React from 'react';
-import BookTitle from './BookTitle';
 
 const TableOfContents = () => {
   return (
