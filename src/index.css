@@ -63,3 +63,18 @@ h1 {
     font-size: 2.5em
   }
 }
+
+a {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  color: #0074D9;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #B10DC9;
+}
+
+a:hover {
+  color: #39CCCC;
+}
