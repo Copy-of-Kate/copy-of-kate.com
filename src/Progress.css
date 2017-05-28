@@ -1,3 +1,11 @@
+.Progress--in-progress,
+.Progress--coming-soon,
+.Progress--rough-draft,
+.Progress--complete {
+  border-style: solid;
+  border-width: 1px;
+}
+
 .Progress--in-progress {
   background-color: #F5D4D3;
   border-color: #a42537;
