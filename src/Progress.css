@@ -1,0 +1,23 @@
+.Progress--in-progress {
+  background-color: #F5D4D3;
+  border-color: #a42537;
+  color: #872525;
+}
+
+.Progress--coming-soon {
+  background-color: #d9edf7;
+  border-color: #2496ad;
+  color: #31708f;
+}
+
+.Progress--rough-draft {
+  background-color: #FFF3DA;
+  border-color: #da6f00;
+  color: #A04D15;
+}
+
+.Progress--complete {
+  background-color: #dff0d8;
+  border-color: #486c2a;
+  color: #3c763d;
+}
