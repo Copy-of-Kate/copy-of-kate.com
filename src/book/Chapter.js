@@ -15,7 +15,7 @@ const Chapter = (props) => {
       <h3>{chapterData.title}</h3>
       <Switch>
         <Route path="/book/one/" component={One} />
-        <Route render={() => <p>Not a valid chapter...</p>} />
+        <Route render={() => <p>"Soon"...</p>} />
       </Switch>
     </section>
   );

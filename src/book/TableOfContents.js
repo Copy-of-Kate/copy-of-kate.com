@@ -11,10 +11,9 @@ const TableOfContents = () => {
       <ol className="Table-of-contents">
         {
           ChapterData.map((chapter) => {
-            const url = "/book/" + chapter.number + "/" + chapter.slug;
             return (
               <li><Link to={{
-                pathname: url,
+                pathname: "/book/" + chapter.number + "/" + chapter.slug,
                 state: { chapter: chapter }
               }}>{chapter.title}</Link> ({chapter.progress})</li>
             );
