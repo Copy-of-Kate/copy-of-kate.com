@@ -2,7 +2,7 @@
 index.css is for any CSS rule that does not include a class, ID,
 or selector other than native HTML
 */
-@import url("//fonts.googleapis.com/css?family=Droid+Serif|Oxygen:700");
+@import url("https//fonts.googleapis.com/css?family=Droid+Serif|Oxygen:700");
 
 html {
   box-sizing: border-box;

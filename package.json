@@ -2,7 +2,7 @@
   "name": "copy-of-kate.com",
   "version": "1.0.0-b",
   "private": true,
-  "homepage": "http://copy-of-kate.com/",
+  "homepage": "https://copy-of-kate.com/",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
