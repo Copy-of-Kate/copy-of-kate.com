@@ -16,5 +16,5 @@ const config = {
 };
 firebase.initializeApp(config);
 
-ReactDOM.render(<Book />, document.getElementById('root'));
+ReactDOM.render(<Book firebase={firebase} />, document.getElementById('root'));
 registerServiceWorker();
