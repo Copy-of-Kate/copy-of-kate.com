@@ -2,7 +2,7 @@ import React from 'react';
 import TableOfContents from './TableOfContents';
 import BookTitle from './BookTitle';
 
-const Intro = () => {
+const Intro = (props) => {
   return (
     <section>
       <BookTitle />
@@ -12,7 +12,7 @@ const Intro = () => {
         <p>- SD</p>
         <h2>Index</h2>
         <h4>All chapters and chapter titles are subject to change at any time.</h4>
-        <TableOfContents />
+        <TableOfContents chapters={props.chapters} {...props} />
       </article>
     </section>
   );

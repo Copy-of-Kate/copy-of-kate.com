@@ -4,7 +4,6 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import * as firebase from 'firebase';
 import './Book.css';
 
 import Intro from './book/Intro';
@@ -22,7 +21,7 @@ class Book extends Component {
   }
 
   componentDidMount() {
-    const rootRef = firebase.database().ref().child('chapters');
+    const rootRef = this.props.firebase.database().ref().child('chapters');
     rootRef.on('value', (snapshot) => {
       this.setState({
         chapters: snapshot.val()
@@ -35,8 +34,8 @@ class Book extends Component {
       <Router>
         <div className="Book">
           <Switch>
-            <Route exact path="/" component={Intro} />
-            <Route exact path="/book/" component={TableOfContents} />
+            <Route exact path="/" render={(props) => <Intro chapters={this.state.chapters} {...props} />} />
+            <Route exact path="/book/" render={(props) => <TableOfContents chapters={this.state.chapters} {...props} />} />
             <Route path="/book/:chapter/:title/" component={Chapter} />
             <Route component={NotFound} />
           </Switch>
