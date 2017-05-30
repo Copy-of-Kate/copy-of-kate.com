@@ -7,7 +7,7 @@ import './TableOfContents.css';
 const TableOfContents = (props) => {
   return (
     <section>
-      <Route exact path="/book/" component={BookTitle}/>
+      <Route exact path="/chapter/" component={BookTitle}/>
       { !props.chapters.length &&
         <p>Loading...</p>
       }
@@ -18,8 +18,7 @@ const TableOfContents = (props) => {
             props.chapters.map((chapter) => {
               return (
                 <li key={chapter.slug}><Link to={{
-                  pathname: "/book/" + chapter.number + "/" + chapter.slug,
-                  state: { chapter: chapter }
+                  pathname: "/chapter/" + chapter.number + "/" + chapter.slug
                 }}>{chapter.title}</Link> <ProgressLabel chapterData={chapter} /></li>
               );
             })

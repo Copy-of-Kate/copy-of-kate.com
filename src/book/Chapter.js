@@ -8,16 +8,23 @@ import './Chapter.css';
 import One from './chapters/One';
 
 const Chapter = (props) => {
-  const chapterData = props.location.state.chapter;
+  let currentChapter;
+  if (props.chapters.length) {
+    currentChapter = props.chapters.filter((chapter) => (chapter.number === props.match.params.chapter) ? chapter : false)[0];
+  }
   return (
-    <section>
-      <h1 className="Chapter__title">Chapter {chapterData.number}</h1>
-      <h3>{chapterData.title}</h3>
-      <Switch>
-        <Route path="/book/one/" component={One} />
-        <Route path="/book/" render={() => <p>"Soon"...</p>} />
-      </Switch>
-    </section>
+    <div>
+      { currentChapter &&
+        <section>
+          <h1 className="Chapter__title">Chapter {currentChapter.number}</h1>
+          <h3>{currentChapter.title}</h3>
+          <Switch>
+            <Route path="/chapter/one/" component={One} />
+            <Route path="/chapter/" render={() => <p>"Soon"...</p>} />
+          </Switch>
+        </section>
+      }
+    </div>
   );
 };
 

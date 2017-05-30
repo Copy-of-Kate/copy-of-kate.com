@@ -35,8 +35,8 @@ class Book extends Component {
         <div className="Book">
           <Switch>
             <Route exact path="/" render={(props) => <Intro chapters={this.state.chapters} {...props} />} />
-            <Route exact path="/book/" render={(props) => <TableOfContents chapters={this.state.chapters} {...props} />} />
-            <Route path="/book/:chapter/:title/" component={Chapter} />
+            <Route exact path="/chapter/" render={(props) => <TableOfContents chapters={this.state.chapters} {...props} />} />
+            <Route path="/chapter/:chapter/:title/" render={(props) => <Chapter chapters={this.state.chapters} {...props} />} />
             <Route component={NotFound} />
           </Switch>
         </div>
