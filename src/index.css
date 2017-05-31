@@ -6,16 +6,16 @@ or selector other than native HTML
 
 html {
   box-sizing: border-box;
-  font-size: 100%
+  font-size: 80%
 }
-@media (max-width: 45em) {
-  html {
-    font-size: 80%
-  }
-}
-@media (max-width: 75em) {
+@media (min-width: 45em) {
   html {
     font-size: 90%
+  }
+}
+@media (min-width: 75em) {
+  html {
+    font-size: 100%
   }
 }
 
