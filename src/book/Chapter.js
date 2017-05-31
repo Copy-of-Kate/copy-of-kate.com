@@ -3,6 +3,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import ProgressMessage from '../ProgressMessage';
 import './Chapter.css';
 
 import One from './chapters/One';
@@ -22,6 +23,7 @@ const Chapter = (props) => {
             <Route path="/chapter/one/" component={One} />
             <Route path="/chapter/" render={() => <p>"Soon"...</p>} />
           </Switch>
+          <ProgressMessage chapterData={currentChapter} />
         </section>
       }
     </div>

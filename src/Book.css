@@ -4,3 +4,13 @@
   margin-left: auto;
   padding: 2em 1.5em
 }
+
+.Book__pages {
+  padding-bottom: 15vh;
+}
+
+@media (min-width: 45em) {
+  .Book__pages {
+    padding-bottom: 4em;
+  }
+}

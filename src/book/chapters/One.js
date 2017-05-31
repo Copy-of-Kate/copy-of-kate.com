@@ -28,8 +28,6 @@ const One = () => {
       <p>The collapsed wall left a hole more than a dozen meters high, double that in width. This was impossible to repair by herself, even if she had the necessary knowledge for structural engineering or materials. The cold shook her out of shock and she turned on her heels and started to run back toward the center of the prison. The complex was vast, but she had to assume the cold would overtake her if she didn't immediately try to stop it.</p>
 
       <p>The collapsed wall was in a bad place, fairly central. There were a few large vault-like doors in key locations she could close and possibly keep portions of the prison a reasonable temperature. She rounded a corner and came up on the first of the doors. They were meant to shut down parts of the prison in case of an emergency, like a riot, but still allow for Controllers to move freely to other sections. She would have to close four of the six doors to keep one wing of the complex safe. Unfortunately, her room was directly connected to the collapsed wall with no vault doors in between, so she would be moving no matter what.</p>
-
-      <h2>Chapter in progress...</h2>
     </article>
   );
 };
