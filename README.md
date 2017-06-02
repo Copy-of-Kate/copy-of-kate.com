@@ -1,5 +1,9 @@
 # Copy of Kate website
 
-This is the build system for the customized static website that is hosted via GH Pages.
+This site is built with the following technologies:
 
-More is coming on how this website is built and how the process makes my life easier.
+- React via Create React App
+- React Router v4
+- Firebase Database & Hosting
+- Google Fonts: Droid Serif & Oxygen
+- Spare time
