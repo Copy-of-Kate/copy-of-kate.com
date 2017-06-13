@@ -39,6 +39,13 @@ class Book extends Component {
             <Route path="/chapter/:chapter/:title/" render={(props) => <Chapter chapters={this.state.chapters} {...props} />} />
             <Route component={NotFound} />
           </Switch>
+          <Route path="/" render={({location}) => {
+            if (typeof window.ga === 'function') {
+              window.ga('set', 'page', location.pathname + location.search);
+              window.ga('send', 'pageview');
+            }
+            return null;
+          }} />
         </div>
       </Router>
     );
