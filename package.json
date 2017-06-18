@@ -7,7 +7,8 @@
     "firebase": "^4.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "react-snapshot": "^1.1.0"
   },
   "devDependencies": {
     "normalize.css": "^7.0.0",
