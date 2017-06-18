@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import Book from './Book';
 import * as firebase from 'firebase';
 import registerServiceWorker from './registerServiceWorker';
@@ -16,5 +16,5 @@ const config = {
 };
 firebase.initializeApp(config);
 
-ReactDOM.render(<Book firebase={firebase} />, document.getElementById('root'));
+render(<Book firebase={firebase} />, document.getElementById('root'));
 registerServiceWorker();
