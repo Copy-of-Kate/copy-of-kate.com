@@ -5,6 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 import './Book.css';
+import ChapterData from './data/ChapterData';
 
 import Intro from './book/Intro';
 import Chapter from './book/Chapter';
@@ -15,13 +16,15 @@ class Book extends Component {
 
   constructor() {
     super();
+    // Use local data at first, switch to Firebase when available
     this.state = {
-      chapters: {}
+      chapters: ChapterData
     };
   }
 
   componentDidMount() {
     const rootRef = this.props.firebase.database().ref().child('chapters');
+    // Switch chapter data to Firebase
     rootRef.on('value', (snapshot) => {
       this.setState({
         chapters: snapshot.val()
