@@ -18,7 +18,7 @@ const TableOfContents = (props) => {
             props.chapters.map((chapter) => {
               return (
                 <li key={chapter.slug}><Link to={{
-                  pathname: "/chapter/" + chapter.number + "/" + chapter.slug
+                  pathname: "/chapter/" + chapter.number + "/" + chapter.slug + "/"
                 }}>{chapter.title}</Link> <ProgressLabel chapterData={chapter} /></li>
               );
             })
