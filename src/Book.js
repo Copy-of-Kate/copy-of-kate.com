@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import './Book.css';
 import ChapterData from './data/ChapterData';
 
@@ -35,21 +36,23 @@ class Book extends Component {
   render() {
     return (
       <Router>
-        <div className="Book">
-          <Switch>
-            <Route exact path="/" render={(props) => <Intro chapters={this.state.chapters} {...props} />} />
-            <Route exact path="/chapter/" render={(props) => <TableOfContents chapters={this.state.chapters} {...props} />} />
-            <Route path="/chapter/:chapter/:title/" render={(props) => <Chapter chapters={this.state.chapters} {...props} />} />
-            <Route component={NotFound} />
-          </Switch>
-          <Route path="/" render={({location}) => {
-            if (typeof window.ga === 'function') {
-              window.ga('set', 'page', location.pathname + location.search);
-              window.ga('send', 'pageview');
-            }
-            return null;
-          }} />
-        </div>
+        <ScrollToTop>
+          <div className="Book">
+            <Switch>
+              <Route exact path="/" render={(props) => <Intro chapters={this.state.chapters} {...props} />} />
+              <Route exact path="/chapter/" render={(props) => <TableOfContents chapters={this.state.chapters} {...props} />} />
+              <Route path="/chapter/:chapter/:title/" render={(props) => <Chapter chapters={this.state.chapters} {...props} />} />
+              <Route component={NotFound} />
+            </Switch>
+            <Route path="/" render={({location}) => {
+              if (typeof window.ga === 'function') {
+                window.ga('set', 'page', location.pathname + location.search);
+                window.ga('send', 'pageview');
+              }
+              return null;
+            }} />
+          </div>
+        </ScrollToTop>
       </Router>
     );
   }
