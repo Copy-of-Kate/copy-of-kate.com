@@ -6,11 +6,11 @@ or selector other than native HTML
 
 html {
   box-sizing: border-box;
-  font-size: 80%
+  font-size: 85%
 }
 @media (min-width: 45em) {
   html {
-    font-size: 90%
+    font-size: 95%
   }
 }
 @media (min-width: 75em) {
@@ -33,18 +33,16 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+ol,
+ul {
   margin-top: 0
 }
 p {
   font-size: 1.15em;
   margin-bottom: 2em
 }
-@media (max-width: 45em) {
-  p {
-    font-size: 1.06886em
-  }
-}
+
 h1,
 h2,
 h3,
@@ -56,11 +54,11 @@ h4 {
   margin-bottom: 0.5em
 }
 h1 {
-  font-size: 4.5em
+  font-size: 2.5em
 }
-@media (max-width: 45em) {
+@media (min-width: 45em) {
   h1 {
-    font-size: 2.5em
+    font-size: 4.5em
   }
 }
 
@@ -77,4 +75,9 @@ a:visited {
 
 a:hover {
   color: #39CCCC;
+}
+
+ol,
+ul {
+  margin-bottom: 2em;
 }
