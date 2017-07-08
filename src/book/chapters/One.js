@@ -2,7 +2,7 @@ import React from 'react';
 
 const One = () => {
   return (
-    <article className="Book__pages">
+    <article>
       <p>She awoke slowly, light starting as pinholes in her vision eventually expanding to a painful brightness from the overhead floodlights. Her right arm was numb, she had fallen on it cutting off circulation. She rolled over now feeling the sharp cold of the cement floor which was accentuated by the lonely sound of the wind occasionally picking up and fading away every few moments.</p>
 
       <p>How many days this time?</p>

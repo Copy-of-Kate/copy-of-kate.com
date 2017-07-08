@@ -4,6 +4,7 @@ import {
   Switch
 } from 'react-router-dom';
 import ProgressMessage from '../ProgressMessage';
+import TableOfContents from './TableOfContents';
 import './Chapter.css';
 
 import One from './chapters/One';
@@ -16,13 +17,14 @@ const Chapter = (props) => {
   return (
     <div>
       { currentChapter &&
-        <section>
+        <section className="Book__pages">
           <h1 className="Chapter__title">Chapter {currentChapter.number}</h1>
           <h3>{currentChapter.title}</h3>
           <Switch>
             <Route path="/chapter/one/" component={One} />
             <Route path="/chapter/" render={() => <p>"Soon"...</p>} />
           </Switch>
+          <TableOfContents chapters={props.chapters} />
           <ProgressMessage chapterData={currentChapter} />
         </section>
       }

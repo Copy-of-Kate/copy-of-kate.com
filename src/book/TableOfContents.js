@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import BookTitle from './BookTitle';
 import ProgressLabel from '../ProgressLabel';
 import './TableOfContents.css';
@@ -17,9 +17,9 @@ const TableOfContents = (props) => {
           {
             props.chapters.map((chapter) => {
               return (
-                <li key={chapter.slug}><Link to={{
+                <li key={chapter.slug}><NavLink to={{
                   pathname: "/chapter/" + chapter.number + "/" + chapter.slug + "/"
-                }}>{chapter.title}</Link> <ProgressLabel chapterData={chapter} /></li>
+                }} activeClassName="is-active">{chapter.title}</NavLink> <ProgressLabel chapterData={chapter} /></li>
               );
             })
           }
