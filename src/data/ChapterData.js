@@ -22,7 +22,23 @@ const ChapterData = [
     "progress": "coming-soon",
     "progressLabel": "coming soon",
     "progressMessage": "This chapter is only in a rough outline form and will be written a bit after Chapter two goes into rough draft."
-  }
+  },
+  {
+    "number": "four",
+    "title": "Perfect Memories",
+    "slug": "perfect-memories",
+    "progress": "coming-soon",
+    "progressLabel": "coming someday",
+    "progressMessage": "This chapter is currently just a twinkle in my eye."
+  },
+  {
+    "number": "five",
+    "title": "Surviving the New Boreal",
+    "slug": "surviving-the-new-boreal",
+    "progress": "coming-soon",
+    "progressLabel": "coming someday",
+    "progressMessage": "This chapter is currently just a twinkle in my eye."
+  },
 ];
 
 export default ChapterData;
