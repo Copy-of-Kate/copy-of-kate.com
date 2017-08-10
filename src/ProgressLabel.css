@@ -2,4 +2,5 @@
   border-radius: .25rem;
   font-size: 1rem;
   padding: .15em .25em;
+  white-space: nowrap;
 }
