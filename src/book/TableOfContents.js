@@ -27,6 +27,7 @@ const TableOfContents = props => {
               </li>
             );
           })}
+          <li>More someday...</li>
         </ol>}
     </section>
   );
