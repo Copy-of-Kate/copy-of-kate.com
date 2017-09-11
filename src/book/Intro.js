@@ -1,6 +1,6 @@
-import React from 'react';
-import TableOfContents from './TableOfContents';
-import BookTitle from './BookTitle';
+import React from "react";
+import TableOfContents from "./TableOfContents";
+import BookTitle from "./BookTitle";
 
 const Intro = props => {
   return (
@@ -9,9 +9,9 @@ const Intro = props => {
       <article className="Book__pages">
         <p>
           Kate, the last prisoner alive in the Non-Loader Colony, awakens to
-          find her safe haven is no longer safe. She begins a journey she has
-          been delaying out of fear and guilt into a world she no longer knows
-          to try and save her copy from a life of infinite solitude.
+          find her safe haven is no longer safe. She begins a journey, long
+          delayed out of fear and guilt, into a world she no longer knows. She
+          must save her copy from a life of infinite solitude.
         </p>
         <h2>Index</h2>
         <h3>
@@ -20,7 +20,7 @@ const Intro = props => {
         <TableOfContents chapters={props.chapters} {...props} />
         <h2>What is Copy of Kate?</h2>
         <p>
-          This is an online, serialized, novel. It is{' '}
+          This is an online, serialized, novel. It is{" "}
           <a
             href="https://github.com/Copy-of-Kate/book"
             title="Github Book Project"
