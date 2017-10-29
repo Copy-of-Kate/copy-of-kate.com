@@ -1,25 +1,25 @@
 {
-  "name": "copy-of-kate.com",
-  "version": "1.0.0-b",
-  "private": true,
-  "homepage": "https://copy-of-kate.com/",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "firebase": "^4.0.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1",
-    "react-snapshot": "^1.1.0"
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17",
+    "gatsby-plugin-react-helmet": "^1.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "normalize.css": "^7.0.0",
-    "react-scripts": "1.0.6"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "firebase deploy"
+    "prettier": "^1.6.1"
   }
 }

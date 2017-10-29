@@ -1,9 +1,13 @@
-# Copy of Kate website
+# gatsby-starter-default
+The default Gatsby starter
 
-This site is built with the following technologies:
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
 
-- React via Create React App
-- React Router v4
-- Firebase Database & Hosting
-- Google Fonts: Droid Serif & Oxygen
-- Spare time
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+```
+gatsby new gatsby-example-site
+```
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
